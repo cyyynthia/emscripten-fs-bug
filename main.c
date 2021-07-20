@@ -22,14 +22,12 @@
 
 EMSCRIPTEN_KEEPALIVE
 int test_memfs() {
-  int ret;
   struct stat* out;
   return stat(".test/", out);
 }
 
 EMSCRIPTEN_KEEPALIVE
 int test_nodefs() {
-  int ret;
   struct stat* out;
   return stat("owo/.test/", out);
 }
